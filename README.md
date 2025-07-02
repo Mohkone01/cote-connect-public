@@ -30,7 +30,7 @@
 
 ### 🔐 Authentification Sécurisée
 ![Authentification](./images/P6.png)
-*Interface de connexion avec design africain*
+*Interface d'inscription avec design africain*
 
 ---
 
