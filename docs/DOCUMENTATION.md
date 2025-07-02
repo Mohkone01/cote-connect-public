@@ -243,7 +243,7 @@ Le logo CôteConnect utilise un design SVG avec :
 Pour toute question technique ou suggestion d'amélioration, contactez l'équipe de développement CôteConnect.
 
 **Version** : 1.0.0  
-**Dernière mise à jour** : Décembre 2024  
+**Dernière mise à jour** : Juillet 2025 
 **Statut** : Production Ready 🚀
 
 ---
