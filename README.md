@@ -155,12 +155,14 @@
 ## 🚀 Accès à la Plateforme
 
 ### 🌐 **Version Web (Disponible)**
-**URL :** [https://cote-connect.vercel.app](https://cote-connect.vercel.app)
+**URL :** [https://cote-connect-private.vercel.app](https://cote-connect-private.vercel.app)
 
 - ✅ **Accès immédiat** sans installation
 - ✅ **Interface responsive** tous appareils
 - ✅ **Mises à jour automatiques**
 - ✅ **Performance optimisée**
+
+> **Note :** Le code source est protégé dans un repository privé pour la sécurité intellectuelle.
 
 ### 📱 **Application Mobile (Bientôt)**
 - **iOS/Android** natif
@@ -287,15 +289,15 @@
 ## 🏆 Témoignages
 
 > *"CôteConnect a révolutionné notre coopérative. Nous vendons maintenant directement à l'international !"*
-> 
+>
 > **- Kouassi Jean, Président Coopérative SCOOP-CA Daloa**
 
 > *"La traçabilité blockchain nous permet de valoriser notre café premium sur les marchés européens."*
-> 
+>
 > **- Aminata Traoré, Secrétaire Générale Union UCOOPAG**
 
 > *"Grâce à la formation en ligne, nos rendements ont augmenté de 35% en une saison."*
-> 
+>
 > **- Ibrahim Ouattara, Producteur Cacao Soubré**
 
 ---
