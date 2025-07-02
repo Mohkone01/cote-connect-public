@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation - CôteConnect</title>
+    <meta name="description" content="Formations et bonnes pratiques agricoles pour les producteurs de café-cacao de Côte d'Ivoire.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/glassmorphism.css">
+    <link rel="stylesheet" href="css/african-theme.css">
+    <link rel="stylesheet" href="css/formation.css">
+</head>
+<body class="african-theme page-formation">
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon african-logo">
+                        <svg viewBox="0 0 60 50" class="logo-svg">
+                            <ellipse cx="30" cy="23" rx="15" ry="18" fill="url(#coffeeGradient)" transform="rotate(-15 30 23)"/>
+                            <ellipse cx="30" cy="23" rx="12" ry="15" fill="url(#cacaoGradient)" transform="rotate(-15 30 23)"/>
+                            <path d="M30 12L30 34" stroke="#2F4F2F" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="25" cy="18" r="2" fill="#228B22"/>
+                            <circle cx="35" cy="28" r="2" fill="#228B22"/>
+                            <path d="M20 40L40 40" stroke="#D2691E" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 44L38 44" stroke="#8B4513" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="coffeeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#D2691E"/>
+                                    <stop offset="100%" style="stop-color:#8B4513"/>
+                                </linearGradient>
+                                <linearGradient id="cacaoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#CD853F"/>
+                                    <stop offset="100%" style="stop-color:#A0522D"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="brand-text">CôteConnect</span>
+                </a>
+            </div>
+
+            <div class="nav-search">
+                <div class="search-container glass-input">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Rechercher formations, guides...">
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="marketplace.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H19M7 13v4a2 2 0 002 2h8a2 2 0 002-2v-4m-8 6h.01M15 19h.01"/></svg>
+                    <span>Marketplace</span>
+                </a>
+                <a href="cooperatives.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    <span>Coopératives</span>
+                </a>
+                <a href="analytics.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    <span>Analytics</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                    <span>Formation</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-auth login">Se connecter</a>
+                    <a href="register.html" class="btn-auth register">Rejoindre</a>
+                </div>
+                <button class="theme-toggle" title="Changer le thème">🌙</button>
+                <button class="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="formation-main">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <h1 class="page-title gradient-text">Formation & Bonnes Pratiques</h1>
+                <p class="page-subtitle">
+                    Développez vos compétences agricoles, découvrez les dernières techniques
+                    et obtenez des certifications reconnues pour améliorer vos rendements.
+                </p>
+            </div>
+
+            <!-- Statistiques formation -->
+            <div class="training-stats glass-card">
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="150">0</span>
+                        <span class="stat-label">Formations disponibles</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="25000">0</span>
+                        <span class="stat-label">Producteurs formés</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="45">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="35">0</span>
+                        <span class="stat-label">% Amélioration rendement</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catégories de formation -->
+            <div class="training-categories">
+                <div class="category-card glass-card">
+                    <div class="category-icon">☕</div>
+                    <h3>Culture du Café</h3>
+                    <p>Techniques de plantation, entretien et récolte du café Arabica et Robusta</p>
+                    <div class="category-stats">
+                        <span>45 formations</span>
+                        <span>8,500 participants</span>
+                    </div>
+                    <button class="btn-primary">Explorer</button>
+                </div>
+
+                <div class="category-card glass-card">
+                    <div class="category-icon">🍫</div>
+                    <h3>Culture du Cacao</h3>
+                    <p>Bonnes pratiques pour la cacaoculture durable et de qualité</p>
+                    <div class="category-stats">
+                        <span>38 formations</span>
+                        <span>12,200 participants</span>
+                    </div>
+                    <button class="btn-primary">Explorer</button>
+                </div>
+
+                <div class="category-card glass-card">
+                    <div class="category-icon">🌱</div>
+                    <h3>Agriculture Biologique</h3>
+                    <p>Certification bio, compostage et techniques naturelles</p>
+                    <div class="category-stats">
+                        <span>25 formations</span>
+                        <span>3,800 participants</span>
+                    </div>
+                    <button class="btn-primary">Explorer</button>
+                </div>
+
+                <div class="category-card glass-card">
+                    <div class="category-icon">💼</div>
+                    <h3>Gestion Coopérative</h3>
+                    <p>Management, comptabilité et développement des coopératives</p>
+                    <div class="category-stats">
+                        <span>20 formations</span>
+                        <span>1,500 participants</span>
+                    </div>
+                    <button class="btn-primary">Explorer</button>
+                </div>
+
+                <div class="category-card glass-card">
+                    <div class="category-icon">📱</div>
+                    <h3>Technologies Agricoles</h3>
+                    <p>Outils numériques, IoT et innovations pour l'agriculture</p>
+                    <div class="category-stats">
+                        <span>15 formations</span>
+                        <span>2,100 participants</span>
+                    </div>
+                    <button class="btn-primary">Explorer</button>
+                </div>
+
+                <div class="category-card glass-card">
+                    <div class="category-icon">🌍</div>
+                    <h3>Commerce International</h3>
+                    <p>Export, négociation et accès aux marchés mondiaux</p>
+                    <div class="category-stats">
+                        <span>12 formations</span>
+                        <span>900 participants</span>
+                    </div>
+                    <button class="btn-primary">Explorer</button>
+                </div>
+            </div>
+
+            <!-- Formations populaires -->
+            <div class="popular-trainings">
+                <h2 class="section-title">🔥 Formations Populaires</h2>
+                <div class="trainings-grid">
+                    <div class="training-card glass-card">
+                        <div class="training-image">
+                            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=300&h=200&fit=crop" alt="Formation café">
+                            <div class="training-badge">Nouveau</div>
+                        </div>
+                        <div class="training-content">
+                            <h3>Techniques Avancées de Fermentation du Café</h3>
+                            <p>Maîtrisez les processus de fermentation pour améliorer la qualité de votre café</p>
+                            <div class="training-meta">
+                                <span class="duration">⏱️ 4 semaines</span>
+                                <span class="level">🎯 Intermédiaire</span>
+                                <span class="rating">⭐ 4.8 (245 avis)</span>
+                            </div>
+                            <div class="training-price">
+                                <span class="price">Gratuit</span>
+                                <span class="certification">+ Certificat</span>
+                            </div>
+                            <button class="btn-primary">S'inscrire</button>
+                        </div>
+                    </div>
+
+                    <div class="training-card glass-card">
+                        <div class="training-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" alt="Formation cacao">
+                            <div class="training-badge premium">Premium</div>
+                        </div>
+                        <div class="training-content">
+                            <h3>Certification Bio pour le Cacao</h3>
+                            <p>Guide complet pour obtenir et maintenir la certification biologique</p>
+                            <div class="training-meta">
+                                <span class="duration">⏱️ 6 semaines</span>
+                                <span class="level">🎯 Avancé</span>
+                                <span class="rating">⭐ 4.9 (189 avis)</span>
+                            </div>
+                            <div class="training-price">
+                                <span class="price">25,000 FCFA</span>
+                                <span class="certification">+ Certificat officiel</span>
+                            </div>
+                            <button class="btn-primary">S'inscrire</button>
+                        </div>
+                    </div>
+
+                    <div class="training-card glass-card">
+                        <div class="training-image">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300&h=200&fit=crop" alt="Formation gestion">
+                            <div class="training-badge">Populaire</div>
+                        </div>
+                        <div class="training-content">
+                            <h3>Gestion Financière des Coopératives</h3>
+                            <p>Comptabilité, budgets et planification financière pour dirigeants</p>
+                            <div class="training-meta">
+                                <span class="duration">⏱️ 3 semaines</span>
+                                <span class="level">🎯 Débutant</span>
+                                <span class="rating">⭐ 4.7 (312 avis)</span>
+                            </div>
+                            <div class="training-price">
+                                <span class="price">Gratuit</span>
+                                <span class="certification">+ Certificat</span>
+                            </div>
+                            <button class="btn-primary">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Webinaires à venir -->
+            <div class="upcoming-webinars">
+                <h2 class="section-title">📅 Webinaires à Venir</h2>
+                <div class="webinars-list">
+                    <div class="webinar-card glass-card">
+                        <div class="webinar-date">
+                            <div class="day">15</div>
+                            <div class="month">JUN</div>
+                        </div>
+                        <div class="webinar-content">
+                            <h3>Tendances du Marché Mondial du Café 2024</h3>
+                            <p>Analyse des prix, demande et opportunités d'export</p>
+                            <div class="webinar-meta">
+                                <span>🕐 14h00 - 15h30</span>
+                                <span>👥 Dr. Kouame Yao, Expert Commerce</span>
+                                <span>🌐 En ligne</span>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">S'inscrire</button>
+                    </div>
+
+                    <div class="webinar-card glass-card">
+                        <div class="webinar-date">
+                            <div class="day">22</div>
+                            <div class="month">JUN</div>
+                        </div>
+                        <div class="webinar-content">
+                            <h3>Innovations Technologiques en Cacaoculture</h3>
+                            <p>IoT, drones et applications mobiles pour optimiser les rendements</p>
+                            <div class="webinar-meta">
+                                <span>🕐 10h00 - 11h30</span>
+                                <span>👥 Ing. Marie Diabaté, AgriTech</span>
+                                <span>🌐 En ligne</span>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">S'inscrire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menu de navigation flottant -->
+    <div class="floating-nav">
+        <a href="index.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+            <span>Accueil</span>
+        </a>
+        <a href="marketplace.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H19"/>
+            </svg>
+            <span>Market</span>
+        </a>
+        <a href="cooperatives.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+            <span>Coops</span>
+        </a>
+        <a href="analytics.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+            <span>Stats</span>
+        </a>
+        <a href="formation.html" class="floating-nav-item active">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+            </svg>
+            <span>Formation</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/theme-universal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/african-theme.js"></script>
+    <script src="js/formation.js"></script>
+</body>
+</html>

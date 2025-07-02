@@ -1,0 +1,676 @@
+/* Styles d'authentification avec thème africain */
+
+.auth-page {
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Arrière-plan africain pour l'auth */
+.auth-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: var(--bg-primary);
+}
+
+.auth-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D2691E' fill-opacity='0.03'%3E%3Cpath d='M50 50l25-25v50l-25-25zm-25 0l25 25v-50l-25 25z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+    animation: patternMove 20s linear infinite;
+}
+
+@keyframes patternMove {
+    0% { transform: translateX(0) translateY(0); }
+    100% { transform: translateX(100px) translateY(100px); }
+}
+
+/* Orbes africains pour l'auth */
+.auth-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.6;
+    animation: floatAuth 8s ease-in-out infinite;
+}
+
+.auth-orb-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--coffee-gradient);
+    top: 10%;
+    right: 10%;
+    animation-delay: 0s;
+}
+
+.auth-orb-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--cacao-gradient);
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 3s;
+}
+
+.auth-orb-3 {
+    width: 150px;
+    height: 150px;
+    background: var(--tropical-gradient);
+    top: 60%;
+    right: 30%;
+    animation-delay: 6s;
+}
+
+@keyframes floatAuth {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    33% { transform: translateY(-30px) scale(1.1); }
+    66% { transform: translateY(20px) scale(0.9); }
+}
+
+/* Layout principal */
+.auth-main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: var(--spacing-2xl);
+    position: relative;
+}
+
+.auth-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: var(--spacing-2xl);
+    align-items: center;
+    width: 100%;
+}
+
+.login-container {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    justify-self: center;
+}
+
+/* Section d'information */
+.auth-info {
+    padding: var(--spacing-2xl);
+}
+
+.info-content {
+    max-width: 600px;
+}
+
+.info-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+    background: var(--african-sunset);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.info-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* Aperçu des fonctionnalités */
+.features-preview {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-lg);
+    transition: all var(--transition-normal);
+}
+
+.feature-item:hover {
+    background: var(--glass-border);
+    transform: translateX(10px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--coffee-gradient);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+}
+
+.feature-text h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.feature-text p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Témoignage */
+.testimonial {
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: var(--spacing-lg);
+    font-size: 4rem;
+    color: var(--coffee-light);
+    opacity: 0.3;
+    font-family: serif;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--coffee-light);
+}
+
+.author-name {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.author-title {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Formulaires africains */
+.auth-form-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 500px;
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 20px 40px rgba(139, 69, 19, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--african-sunset);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.form-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    background: var(--african-sunset);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.form-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Groupes de formulaire */
+.form-group {
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    background: rgba(139, 69, 19, 0.05);
+    border: 2px solid var(--glass-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all var(--transition-normal);
+    backdrop-filter: blur(10px);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--coffee-light);
+    box-shadow: 0 0 0 4px rgba(210, 105, 30, 0.1);
+    background: rgba(139, 69, 19, 0.1);
+    transform: translateY(-2px);
+}
+
+.form-group input::placeholder {
+    color: var(--text-muted);
+}
+
+/* Icônes d'input */
+.input-icon {
+    position: absolute;
+    right: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.input-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--text-muted);
+    fill: none;
+    stroke-width: 2;
+    transition: all var(--transition-fast);
+}
+
+.input-icon:hover svg {
+    stroke: var(--coffee-light);
+    transform: scale(1.1);
+}
+
+/* Rangée de formulaire */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+/* Cases à cocher africaines */
+.checkbox-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.checkbox-label {
+    display: flex !important;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    cursor: pointer;
+    line-height: 1.6;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+}
+
+.checkbox-label:hover {
+    background: var(--glass-bg);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto !important;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.checkmark {
+    width: 24px;
+    height: 24px;
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    border-radius: 6px;
+    position: relative;
+    flex-shrink: 0;
+    transition: all var(--transition-normal);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: var(--coffee-gradient);
+    border-color: transparent;
+    transform: scale(1.1);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Options de formulaire */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.link {
+    color: var(--coffee-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--coffee-gradient);
+    transition: width var(--transition-normal);
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.link:hover {
+    color: var(--text-primary);
+}
+
+/* Boutons africains */
+.btn-full {
+    width: 100%;
+    justify-content: center;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: var(--border-radius-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-full::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-full:hover::before {
+    left: 100%;
+}
+
+/* Diviseur de formulaire */
+.form-divider {
+    text-align: center;
+    margin: var(--spacing-2xl) 0;
+    position: relative;
+}
+
+.form-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+}
+
+.form-divider span {
+    background: var(--bg-primary);
+    padding: 0 var(--spacing-lg);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Connexion sociale */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 2px solid var(--glass-border);
+    border-radius: var(--border-radius-lg);
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+}
+
+.btn-social:hover {
+    background: var(--glass-border);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(139, 69, 19, 0.3);
+    border-color: var(--coffee-light);
+}
+
+.btn-social svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Pied de formulaire */
+.form-footer {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: var(--spacing-lg);
+}
+
+/* Layout spécial pour la connexion */
+.login-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+/* Informations de connexion */
+.login-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.info-card {
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.info-card:hover {
+    background: var(--glass-border);
+    transform: translateY(-2px);
+}
+
+.info-icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.9rem;
+}
+
+.info-card .positive {
+    color: var(--tropical-green);
+    font-weight: 600;
+}
+
+.info-card .negative {
+    color: var(--earth-red);
+    font-weight: 600;
+}
+
+/* Force du mot de passe africaine */
+.password-strength {
+    margin-top: var(--spacing-sm);
+}
+
+.strength-bar {
+    height: 6px;
+    background: var(--glass-bg);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-sm);
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0%;
+    transition: all var(--transition-normal);
+    border-radius: 3px;
+    background: var(--coffee-gradient);
+}
+
+.strength-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .auth-info {
+        order: 2;
+        text-align: center;
+    }
+
+    .info-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-main {
+        padding-top: 80px;
+    }
+
+    .auth-container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .auth-form {
+        padding: var(--spacing-xl);
+    }
+
+    .info-title {
+        font-size: 2.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
