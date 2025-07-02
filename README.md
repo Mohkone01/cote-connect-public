@@ -94,11 +94,7 @@
 - **50K+ agriculteurs** formés
 - **$100M+** de transactions facilitées
 
-### 🏆 **Reconnaissance Internationale**
-- **Prix Innovation Agricole** 2024
-- **Certification Fair Trade** intégrée
-- **Partenariat ONU** pour développement durable
-- **Support gouvernemental** ivoirien
+
 
 ---
 
@@ -155,14 +151,12 @@
 ## 🚀 Accès à la Plateforme
 
 ### 🌐 **Version Web (Disponible)**
-**URL :** [https://cote-connect-private.vercel.app](https://cote-connect-private.vercel.app)
+**URL :** [https://cote-connect-private.vercel.app/](https://cote-connect-private.vercel.app/)
 
 - ✅ **Accès immédiat** sans installation
 - ✅ **Interface responsive** tous appareils
 - ✅ **Mises à jour automatiques**
 - ✅ **Performance optimisée**
-
-> **Note :** Le code source est protégé dans un repository privé pour la sécurité intellectuelle.
 
 ### 📱 **Application Mobile (Bientôt)**
 - **iOS/Android** natif
@@ -245,11 +239,6 @@
 - **Blockchain** pour traçabilité inaltérable
 - **Conformité RGPD** et réglementations locales
 
-### 📋 **Certifications**
-- **Fair Trade** intégré
-- **Bio/Organic** supporté
-- **Rainforest Alliance** compatible
-- **UTZ** certification
 
 ---
 
@@ -257,7 +246,7 @@
 
 ### 🆘 **Support Technique**
 - **Email :** support@coteconnect.ci
-- **Téléphone :** +225 XX XX XX XX
+- **Téléphone :** +225 0102224315
 - **WhatsApp :** Support 24/7
 - **Bureau :** Abidjan, Côte d'Ivoire
 
@@ -286,26 +275,13 @@
 
 ---
 
-## 🏆 Témoignages
-
-> *"CôteConnect a révolutionné notre coopérative. Nous vendons maintenant directement à l'international !"*
->
-> **- Kouassi Jean, Président Coopérative SCOOP-CA Daloa**
-
-> *"La traçabilité blockchain nous permet de valoriser notre café premium sur les marchés européens."*
->
-> **- Aminata Traoré, Secrétaire Générale Union UCOOPAG**
-
-> *"Grâce à la formation en ligne, nos rendements ont augmenté de 35% en une saison."*
->
-> **- Ibrahim Ouattara, Producteur Cacao Soubré**
 
 ---
 
 ## 🎉 Rejoignez la Révolution Agricole !
 
 ### 🚀 **Accès Immédiat**
-**[👉 ACCÉDER À CÔTECONNECT 👈](https://cote-connect.vercel.app)**
+**[👉 ACCÉDER À CÔTECONNECT 👈](https://cote-connect-private.vercel.app/)**
 
 ### 📱 **Installation Mobile**
 1. Ouvrir le lien sur votre téléphone
