@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplois - ProConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/glassmorphism.css">
+    <link rel="stylesheet" href="css/jobs.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <div class="logo-gradient"></div>
+                    </div>
+                    <span class="brand-text">ProConnect</span>
+                </a>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-container glass-input">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Rechercher des professionnels, entreprises...">
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="network.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    <span>Réseau</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8m0 0H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2h-4z"/></svg>
+                    <span>Emplois</span>
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    <span>Messages</span>
+                    <div class="notification-badge">3</div>
+                </a>
+                <a href="feed.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/></svg>
+                    <span>Actualités</span>
+                </a>
+            </div>
+            
+            <div class="nav-profile">
+                <div class="profile-dropdown">
+                    <div class="profile-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Profile">
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <div class="dropdown-content glass-card">
+                        <a href="profile.html">Mon Profil</a>
+                        <a href="#">Paramètres</a>
+                        <a href="#" class="theme-toggle">Mode Sombre</a>
+                        <hr>
+                        <a href="index.html">Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="jobs-main">
+        <div class="container">
+            <div class="jobs-layout">
+                <!-- Sidebar filtres -->
+                <aside class="jobs-sidebar">
+                    <div class="sidebar-card glass-card">
+                        <h3>Filtres de recherche</h3>
+                        
+                        <div class="filter-group">
+                            <label>Mots-clés</label>
+                            <input type="text" placeholder="Poste, compétences..." class="filter-input">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Localisation</label>
+                            <input type="text" placeholder="Ville, région..." class="filter-input">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Type de contrat</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    CDI
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    CDD
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Freelance
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Stage
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Niveau d'expérience</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Débutant (0-2 ans)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Intermédiaire (2-5 ans)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Senior (5+ ans)
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Salaire</label>
+                            <div class="salary-range">
+                                <input type="range" min="30000" max="150000" value="60000" class="salary-slider">
+                                <div class="salary-display">
+                                    <span>30k€</span>
+                                    <span class="current-salary">60k€</span>
+                                    <span>150k€</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Télétravail</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    100% remote
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Hybride
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Présentiel
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary btn-full">Appliquer les filtres</button>
+                        <button class="btn-secondary btn-full">Réinitialiser</button>
+                    </div>
+                    
+                    <!-- Alertes emploi -->
+                    <div class="sidebar-card glass-card">
+                        <h3>Alertes emploi</h3>
+                        <p>Recevez les nouvelles offres correspondant à vos critères</p>
+                        <button class="btn-secondary btn-full">Créer une alerte</button>
+                    </div>
+                </aside>
+
+                <!-- Contenu principal -->
+                <div class="jobs-content">
+                    <!-- Header -->
+                    <div class="jobs-header">
+                        <div class="header-info">
+                            <h1 class="page-title gradient-text">Offres d'emploi</h1>
+                            <p class="jobs-count"><span class="counter" data-target="12847">0</span> offres disponibles</p>
+                        </div>
+                        
+                        <div class="header-actions">
+                            <div class="sort-options">
+                                <select class="sort-select">
+                                    <option value="recent">Plus récentes</option>
+                                    <option value="relevant">Plus pertinentes</option>
+                                    <option value="salary">Salaire croissant</option>
+                                    <option value="salary-desc">Salaire décroissant</option>
+                                </select>
+                            </div>
+                            
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="list">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="8" y1="6" x2="21" y2="6"/>
+                                        <line x1="8" y1="12" x2="21" y2="12"/>
+                                        <line x1="8" y1="18" x2="21" y2="18"/>
+                                        <line x1="3" y1="6" x2="3.01" y2="6"/>
+                                        <line x1="3" y1="12" x2="3.01" y2="12"/>
+                                        <line x1="3" y1="18" x2="3.01" y2="18"/>
+                                    </svg>
+                                </button>
+                                <button class="view-btn" data-view="grid">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="3" y="3" width="7" height="7"/>
+                                        <rect x="14" y="3" width="7" height="7"/>
+                                        <rect x="14" y="14" width="7" height="7"/>
+                                        <rect x="3" y="14" width="7" height="7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Liste des emplois -->
+                    <div class="jobs-list" id="jobsList">
+                        <!-- Les offres d'emploi seront générées dynamiquement -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination-container">
+                        <button class="btn-secondary" id="prevPage" disabled>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                            Précédent
+                        </button>
+                        
+                        <div class="pagination-numbers">
+                            <button class="page-number active">1</button>
+                            <button class="page-number">2</button>
+                            <button class="page-number">3</button>
+                            <span class="page-dots">...</span>
+                            <button class="page-number">25</button>
+                        </div>
+                        
+                        <button class="btn-secondary" id="nextPage">
+                            Suivant
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal détail emploi -->
+    <div id="jobModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass-card job-modal">
+            <div class="modal-header">
+                <h3 id="modalJobTitle">Titre du poste</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modalJobContent">
+                <!-- Le contenu sera généré dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "name": "CôteConnect - Plateforme Coopératives Café-Cacao",
+  "short_name": "CôteConnect",
+  "description": "Plateforme révolutionnaire pour les coopératives de café-cacao de Côte d'Ivoire. Marketplace B2B, traçabilité blockchain, formation agricole.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#8B4513",
+  "theme_color": "#D2691E",
+  "lang": "fr",
+  "scope": "/",
+  "categories": ["business", "productivity", "agriculture"],
+  "icons": [
+    {
+      "src": "/images/P1.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/P1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Page d'accueil CôteConnect"
+    },
+    {
+      "src": "/images/P2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Marketplace B2B"
+    },
+    {
+      "src": "/images/P3.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Gestion des coopératives"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Marketplace",
+      "short_name": "Marketplace",
+      "description": "Accéder au marketplace B2B",
+      "url": "/marketplace.html",
+      "icons": [
+        {
+          "src": "/images/P2.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Coopératives",
+      "short_name": "Coopératives",
+      "description": "Gérer les coopératives",
+      "url": "/cooperatives.html",
+      "icons": [
+        {
+          "src": "/images/P3.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Formation",
+      "short_name": "Formation",
+      "description": "Accéder à la formation",
+      "url": "/formation.html",
+      "icons": [
+        {
+          "src": "/images/P5.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

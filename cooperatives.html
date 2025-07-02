@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coopératives - CôteConnect</title>
+    <meta name="description" content="Découvrez les coopératives de café-cacao de Côte d'Ivoire. Connectez-vous avec des producteurs locaux.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/glassmorphism.css">
+    <link rel="stylesheet" href="css/african-theme.css">
+    <link rel="stylesheet" href="css/cooperatives.css">
+</head>
+<body class="african-theme page-cooperatives">
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon african-logo">
+                        <svg viewBox="0 0 60 50" class="logo-svg">
+                            <ellipse cx="30" cy="23" rx="15" ry="18" fill="url(#coffeeGradient)" transform="rotate(-15 30 23)"/>
+                            <ellipse cx="30" cy="23" rx="12" ry="15" fill="url(#cacaoGradient)" transform="rotate(-15 30 23)"/>
+                            <path d="M30 12L30 34" stroke="#2F4F2F" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="25" cy="18" r="2" fill="#228B22"/>
+                            <circle cx="35" cy="28" r="2" fill="#228B22"/>
+                            <path d="M20 40L40 40" stroke="#D2691E" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 44L38 44" stroke="#8B4513" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="coffeeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#D2691E"/>
+                                    <stop offset="100%" style="stop-color:#8B4513"/>
+                                </linearGradient>
+                                <linearGradient id="cacaoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#CD853F"/>
+                                    <stop offset="100%" style="stop-color:#A0522D"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="brand-text">CôteConnect</span>
+                </a>
+            </div>
+
+            <div class="nav-search">
+                <div class="search-container glass-input">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Rechercher coopératives, produits, acheteurs...">
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="marketplace.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H19M7 13v4a2 2 0 002 2h8a2 2 0 002-2v-4m-8 6h.01M15 19h.01"/></svg>
+                    <span>Marketplace</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    <span>Coopératives</span>
+                </a>
+                <a href="analytics.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    <span>Analytics</span>
+                </a>
+                <a href="formation.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                    <span>Formation</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-auth login">Se connecter</a>
+                    <a href="register.html" class="btn-auth register">Rejoindre</a>
+                </div>
+                <button class="theme-toggle" title="Changer le thème">🌙</button>
+                <button class="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="cooperatives-main">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <h1 class="page-title gradient-text">Coopératives de Côte d'Ivoire</h1>
+                <p class="page-subtitle">
+                    Découvrez les coopératives de café-cacao qui transforment l'agriculture ivoirienne.
+                    Connectez-vous avec des producteurs passionnés et engagés.
+                </p>
+            </div>
+
+            <!-- Statistiques -->
+            <div class="coop-stats glass-card">
+                <div class="stat-item">
+                    <div class="stat-icon">🏛️</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="2500">0</span>
+                        <span class="stat-label">Coopératives actives</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="150000">0</span>
+                        <span class="stat-label">Producteurs membres</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="19">0</span>
+                        <span class="stat-label">Régions couvertes</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-content">
+                        <span class="stat-number counter" data-target="85">0</span>
+                        <span class="stat-label">% Certifiées Bio</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtres -->
+            <div class="coop-filters glass-card">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">Toutes</button>
+                    <button class="filter-tab" data-filter="coffee">Café</button>
+                    <button class="filter-tab" data-filter="cacao">Cacao</button>
+                    <button class="filter-tab" data-filter="certified">Certifiées</button>
+                </div>
+
+                <div class="filter-controls">
+                    <select class="filter-select">
+                        <option value="">Toutes les régions</option>
+                        <option value="yamoussoukro">Yamoussoukro</option>
+                        <option value="daloa">Daloa</option>
+                        <option value="san-pedro">San-Pédro</option>
+                        <option value="bouake">Bouaké</option>
+                        <option value="abengourou">Abengourou</option>
+                    </select>
+
+                    <select class="filter-select">
+                        <option value="">Taille</option>
+                        <option value="small">Petite (< 100 membres)</option>
+                        <option value="medium">Moyenne (100-500)</option>
+                        <option value="large">Grande (> 500)</option>
+                    </select>
+
+                    <button class="btn-primary">Filtrer</button>
+                </div>
+            </div>
+
+            <!-- Grille des coopératives -->
+            <div class="cooperatives-grid" id="cooperativesGrid">
+                <!-- Les coopératives seront générées dynamiquement -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-container">
+                <button class="btn-secondary" id="prevPage" disabled>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                    Précédent
+                </button>
+
+                <div class="pagination-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-number">12</button>
+                </div>
+
+                <button class="btn-secondary" id="nextPage">
+                    Suivant
+                    <svg viewBox="0 0 24 24">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menu de navigation flottant -->
+    <div class="floating-nav">
+        <a href="index.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+            <span>Accueil</span>
+        </a>
+        <a href="marketplace.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H19"/>
+            </svg>
+            <span>Market</span>
+        </a>
+        <a href="cooperatives.html" class="floating-nav-item active">
+            <svg viewBox="0 0 24 24">
+                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+            <span>Coops</span>
+        </a>
+        <a href="analytics.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+            <span>Stats</span>
+        </a>
+        <a href="formation.html" class="floating-nav-item">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+            </svg>
+            <span>Formation</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/theme-universal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/african-theme.js"></script>
+    <script src="js/cooperatives.js"></script>
+</body>
+</html>

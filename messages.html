@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - ProConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/glassmorphism.css">
+    <link rel="stylesheet" href="css/messages.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <div class="logo-gradient"></div>
+                    </div>
+                    <span class="brand-text">ProConnect</span>
+                </a>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-container glass-input">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Rechercher des professionnels, entreprises...">
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="network.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    <span>Réseau</span>
+                </a>
+                <a href="jobs.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8m0 0H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2h-4z"/></svg>
+                    <span>Emplois</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    <span>Messages</span>
+                </a>
+                <a href="feed.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/></svg>
+                    <span>Actualités</span>
+                </a>
+            </div>
+            
+            <div class="nav-profile">
+                <div class="profile-dropdown">
+                    <div class="profile-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Profile">
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <div class="dropdown-content glass-card">
+                        <a href="profile.html">Mon Profil</a>
+                        <a href="#">Paramètres</a>
+                        <a href="#" class="theme-toggle">Mode Sombre</a>
+                        <hr>
+                        <a href="index.html">Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="messages-main">
+        <div class="messages-container">
+            <!-- Sidebar conversations -->
+            <aside class="conversations-sidebar glass-card">
+                <div class="sidebar-header">
+                    <h2>Messages</h2>
+                    <button class="new-message-btn" title="Nouveau message">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="search-conversations">
+                    <div class="search-container">
+                        <svg class="search-icon" viewBox="0 0 24 24">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <input type="text" placeholder="Rechercher une conversation...">
+                    </div>
+                </div>
+                
+                <div class="conversations-list" id="conversationsList">
+                    <!-- Les conversations seront générées dynamiquement -->
+                </div>
+            </aside>
+
+            <!-- Zone de chat -->
+            <div class="chat-area">
+                <!-- Header du chat -->
+                <div class="chat-header glass-card">
+                    <div class="chat-contact-info">
+                        <div class="contact-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face" alt="Marie" id="chatAvatar">
+                            <div class="status-indicator online"></div>
+                        </div>
+                        <div class="contact-details">
+                            <h3 id="chatContactName">Marie Dubois</h3>
+                            <p id="chatContactStatus">En ligne</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-actions">
+                        <button class="chat-action-btn" title="Appel vocal">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                        </button>
+                        <button class="chat-action-btn" title="Appel vidéo">
+                            <svg viewBox="0 0 24 24">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </button>
+                        <button class="chat-action-btn" title="Informations">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div class="messages-container-inner">
+                    <div class="messages-list" id="messagesList">
+                        <!-- Les messages seront générés dynamiquement -->
+                    </div>
+                </div>
+
+                <!-- Zone de saisie -->
+                <div class="message-input-area glass-card">
+                    <div class="input-actions">
+                        <button class="input-action-btn" title="Joindre un fichier">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66L9.64 16.2a2 2 0 01-2.83-2.83l8.49-8.49"/>
+                            </svg>
+                        </button>
+                        <button class="input-action-btn" title="Emoji">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="message-input-container">
+                        <input type="text" id="messageInput" placeholder="Tapez votre message..." class="message-input">
+                        <button class="send-btn" id="sendBtn">
+                            <svg viewBox="0 0 24 24">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar informations (masquée par défaut) -->
+            <aside class="info-sidebar glass-card" id="infoSidebar" style="display: none;">
+                <div class="info-header">
+                    <h3>Informations</h3>
+                    <button class="close-info-btn">
+                        <svg viewBox="0 0 24 24">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="contact-profile">
+                    <div class="profile-avatar-large">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face" alt="Marie">
+                    </div>
+                    <h4>Marie Dubois</h4>
+                    <p>Product Manager chez Google</p>
+                    <div class="profile-actions">
+                        <button class="btn-primary">Voir le profil</button>
+                        <button class="btn-secondary">Bloquer</button>
+                    </div>
+                </div>
+                
+                <div class="shared-content">
+                    <h4>Fichiers partagés</h4>
+                    <div class="shared-files">
+                        <div class="shared-file">
+                            <div class="file-icon">📄</div>
+                            <div class="file-info">
+                                <span class="file-name">Présentation_Projet.pdf</span>
+                                <span class="file-date">Il y a 2 jours</span>
+                            </div>
+                        </div>
+                        <div class="shared-file">
+                            <div class="file-icon">🖼️</div>
+                            <div class="file-info">
+                                <span class="file-name">mockup_design.png</span>
+                                <span class="file-date">Il y a 1 semaine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Modal nouveau message -->
+    <div id="newMessageModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h3>Nouveau message</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>À :</label>
+                    <input type="text" placeholder="Rechercher un contact..." class="contact-search">
+                </div>
+                <div class="form-group">
+                    <label>Message :</label>
+                    <textarea placeholder="Tapez votre message..." rows="4"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-secondary modal-cancel">Annuler</button>
+                    <button class="btn-primary">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/messages.js"></script>
+</body>
+</html>

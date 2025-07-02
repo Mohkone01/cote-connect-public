@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - ProConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/glassmorphism.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation (même que index.html) -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <div class="logo-gradient"></div>
+                    </div>
+                    <span class="brand-text">ProConnect</span>
+                </div>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-container glass-input">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Rechercher des professionnels, entreprises...">
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="network.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    <span>Réseau</span>
+                </a>
+                <a href="jobs.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8m0 0H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2h-4z"/></svg>
+                    <span>Emplois</span>
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    <span>Messages</span>
+                    <div class="notification-badge">3</div>
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    <span>Profil</span>
+                </a>
+            </div>
+            
+            <div class="nav-profile">
+                <div class="profile-dropdown">
+                    <div class="profile-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Profile">
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <div class="dropdown-content glass-card">
+                        <a href="profile.html">Mon Profil</a>
+                        <a href="#">Paramètres</a>
+                        <a href="#" class="theme-toggle">Mode Sombre</a>
+                        <hr>
+                        <a href="#">Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profil Header -->
+    <section class="profile-header">
+        <div class="profile-cover">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=400&fit=crop" alt="Cover" class="cover-image">
+            <div class="cover-overlay"></div>
+            <button class="edit-cover-btn glass-btn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                    <path d="m18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="container">
+            <div class="profile-info">
+                <div class="profile-avatar-large">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Profile">
+                    <button class="edit-avatar-btn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/>
+                            <circle cx="12" cy="13" r="4"/>
+                        </svg>
+                    </button>
+                    <div class="status-indicator online"></div>
+                </div>
+                
+                <div class="profile-details">
+                    <div class="profile-name-section">
+                        <h1 class="profile-name">Alexandre Dubois</h1>
+                        <button class="edit-name-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                                <path d="m18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <p class="profile-title">Senior Full-Stack Developer & Tech Lead</p>
+                    <p class="profile-location">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Paris, France
+                    </p>
+                    
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="2847">0</span>
+                            <span class="stat-label">Connexions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="1256">0</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="847">0</span>
+                            <span class="stat-label">Vues profil</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-actions">
+                    <button class="btn-primary">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                        Message
+                    </button>
+                    <button class="btn-secondary">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        Se connecter
+                    </button>
+                    <button class="btn-secondary">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu du profil -->
+    <div class="container profile-content">
+        <div class="profile-grid">
+            <!-- Colonne principale -->
+            <div class="profile-main">
+                <!-- À propos -->
+                <section class="profile-section glass-card">
+                    <div class="section-header">
+                        <h2>À propos</h2>
+                        <button class="edit-section-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                                <path d="m18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="about-text">
+                        Développeur passionné avec plus de 8 ans d'expérience dans la création d'applications web modernes. 
+                        Spécialisé en React, Node.js et architecture cloud. J'aime résoudre des problèmes complexes et 
+                        créer des solutions innovantes qui ont un impact réel sur les utilisateurs.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </section>
+
+                <!-- Expérience -->
+                <section class="profile-section glass-card">
+                    <div class="section-header">
+                        <h2>Expérience</h2>
+                        <button class="add-section-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 4v16m8-8H4"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="experience-logo">
+                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=60&h=60&fit=crop" alt="TechCorp">
+                            </div>
+                            <div class="experience-details">
+                                <h3>Senior Full-Stack Developer</h3>
+                                <p class="company">TechCorp • Temps plein</p>
+                                <p class="duration">Jan 2022 - Présent • 2 ans</p>
+                                <p class="location">Paris, France</p>
+                                <p class="description">
+                                    Lead technique sur plusieurs projets stratégiques. Développement d'une plateforme 
+                                    e-commerce gérant plus de 100k utilisateurs quotidiens.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="experience-logo">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=60&h=60&fit=crop" alt="StartupXYZ">
+                            </div>
+                            <div class="experience-details">
+                                <h3>Full-Stack Developer</h3>
+                                <p class="company">StartupXYZ • Temps plein</p>
+                                <p class="duration">Mar 2020 - Déc 2021 • 1 an 10 mois</p>
+                                <p class="location">Lyon, France</p>
+                                <p class="description">
+                                    Développement d'applications web innovantes dans un environnement startup dynamique.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Formation -->
+                <section class="profile-section glass-card">
+                    <div class="section-header">
+                        <h2>Formation</h2>
+                        <button class="add-section-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 4v16m8-8H4"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="education-list">
+                        <div class="education-item">
+                            <div class="education-logo">
+                                <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=60&h=60&fit=crop" alt="École">
+                            </div>
+                            <div class="education-details">
+                                <h3>Master en Informatique</h3>
+                                <p class="school">École Supérieure d'Informatique</p>
+                                <p class="duration">2014 - 2016</p>
+                                <p class="description">
+                                    Spécialisation en développement web et intelligence artificielle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="profile-sidebar">
+                <!-- Compétences -->
+                <section class="profile-section glass-card">
+                    <h3>Compétences</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Langues -->
+                <section class="profile-section glass-card">
+                    <h3>Langues</h3>
+                    <div class="languages-list">
+                        <div class="language-item">
+                            <span class="language-name">Français</span>
+                            <span class="language-level">Natif</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Anglais</span>
+                            <span class="language-level">Courant</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Espagnol</span>
+                            <span class="language-level">Intermédiaire</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recommandations -->
+                <section class="profile-section glass-card">
+                    <h3>Recommandations</h3>
+                    <div class="recommendations-list">
+                        <div class="recommendation-item">
+                            <div class="recommender-info">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="Marie">
+                                <div>
+                                    <p class="recommender-name">Marie Dubois</p>
+                                    <p class="recommender-title">Product Manager</p>
+                                </div>
+                            </div>
+                            <p class="recommendation-text">
+                                "Alexandre est un développeur exceptionnel avec une vision technique remarquable..."
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

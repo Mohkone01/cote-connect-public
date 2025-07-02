@@ -1,0 +1,18 @@
+# Fichiers systeme 
+.DS_Store 
+Thumbs.db 
+*.log 
+ 
+# Fichiers temporaires 
+*.tmp 
+*.temp 
+*~ 
+ 
+# Dossiers de cache 
+.cache/ 
+.vercel/ 
+ 
+# Fichiers de configuration locale 
+.env 
+.env.local 
+.env.production 
